@@ -3,15 +3,17 @@
 def mylist_thingy(letter):
   #! change this so it directly returns via list comprehension
   retvalue = []
-  for x in range(ord('A'), ord(letter)):
-    retvalue.append(chr(x))
+#  for x in range(ord('A'), ord(letter)):
+#    retvalue.append(chr(x))
+
+  retvalue=[chr(x) for x in range(ord('A'),ord(letter))]
   return retvalue
 
 #! make this a proper generator function
 def mygenerator_thingy(letter):
   current = ord('A')
   while current < ord(letter):
-    return chr(current)
+    yield chr(current)
     current += 1
     
 real_list = mylist_thingy('Z')

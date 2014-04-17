@@ -10,8 +10,17 @@ try:
 except KeyError, e:
   traceback.print_exc()
 
-pprint(data)  
+pprint(data)
+
+import collections as collec
+d=collec.deque(data)
+d=d.append('C')
+
+pprint(d
+
 #! a datastructure from the collections module allows the append operation
+
+
 #d_data = ???
 #d_data.update(data)
 #d_data['C'].append(2)

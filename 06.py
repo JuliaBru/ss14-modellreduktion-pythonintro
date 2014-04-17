@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
-def foo(bar=[]):
+def foo(bar=None):
+  bar=bar or []
   bar.append('o')
   return bar
 
